@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>ADD NEW EMPLOYEE</title>
+</head>
+<body bgcolor="yellow">
+	<div align="center">
+		<h1>ADD NEW EMPLOYEE</h1>
+		<br />
+		<form action="#" th:action="@{/adddata2}" th:object="${employee}"
+			method="post">
+
+		<table border="0" cellpadding="10">
+				<tr>
+					<td>Employee Name</td>
+					<td><input type="text" th:field="*{empName}" /></td>
+				</tr>
+				<tr>
+					<td>Employee Salary</td>
+					<td><input type="text" th:field="*{empSalary}" /></td>
+				</tr>
+						
+				<tr>
+					<td colspan="2"><button type="submit">SAVE</button> </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
